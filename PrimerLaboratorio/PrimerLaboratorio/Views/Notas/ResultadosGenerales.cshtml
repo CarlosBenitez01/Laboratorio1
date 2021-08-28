@@ -1,0 +1,47 @@
+﻿@model List<PrimerLaboratorio.Models.TblNotasEstudiante>
+@{
+    ViewBag.Title = "ResultadosGenerales";
+}
+
+<h2>Resultados Generales</h2>
+
+<h3>@Html.ActionLink("Ir al inicio", "Index")</h3>
+
+<table table class="table table-dark table-striped">
+    <th>
+        Nombre
+    </th>
+    <th>
+        Primer laboratorio
+    </th>
+    <th>
+        Segundo laboratorio
+    </th>
+    <th>
+        Tercer laboratorio
+    </th>
+    <th>
+        Primer Parcial
+    </th>
+    <th>
+        Segundo Parcial
+    </th>
+    <th>
+        Tercer Parcial
+    </th>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Est_nombre</td>
+                <td>@item.Est_lab1</td>
+                <td>@item.Est_lab2</td>
+                <td>@item.Est_lab3</td>
+                <td>@item.Est_par1</td>
+                <td>@item.Est_par2</td>
+                <td>@item.Est_par3</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

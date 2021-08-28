@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Notas</h2>
+<style>
+    h2 {
+        text-align:center;
+    }
+.Contenedor {
+max-width: 300px;
+margin:auto;
+border: solid 2px;
+padding: 10px;
+    
+}
+.Contenedor .formLabel{
+    display: block;
+    margin-bottom: 7px;
+}
+.Contenedor .formInput{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.btn_submit{
+    width: 100%;
+    margin: 15px 0px;
+    background: transparent;
+}
+
+.btn_submit:hover{
+    transition: 1s;
+    background-color: rgba(0, 0, 255, .3) !important;
+}
+
+</style>
+@using (Html.BeginForm("Save", "Notas", FormMethod.Post))
+{
+ 
+<div class="Contenedor">
+    <label for="nombre" class="formLabel">Nombre: </label>
+    <input type="text" name="nombre" class="formInput" required>
+
+
+    <label for="lab1" class="formLabel">Nota del laboratorio 1: </label>
+    <input type="text" name="lab1" class="formInput" required>
+
+
+    <label for="lab2" class="formLabel">Nota del laboratorio 2: </label>
+    <input type="text" name="lab2" class="formInput" required>
+
+
+    <label for="lab3" class="formLabel">Nota del laboratorio 3: </label>
+    <input type="text" name="lab3" class="formInput" required>
+
+
+    <label for="par1" class="formLabel">Nota del Parcial 1: </label>
+    <input type="text" name="par1" class="formInput" required>
+
+
+    <label for="par2" class="formLabel">Nota del Parcial 2: </label>
+    <input type="text" name="par2" class="formInput" required>
+
+
+    <label for="par3" class="formLabel">Nota del Parcial 3: </label>
+    <input type="text" name="par3" class="formInput" required>
+
+
+    <input type="submit" value="Enviar" class="btn_submit">
+</div>
+}
+

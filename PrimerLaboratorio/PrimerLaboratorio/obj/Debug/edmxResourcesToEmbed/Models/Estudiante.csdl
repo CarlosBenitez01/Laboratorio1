@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EstudianteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TblNotasEstudiante">
+    <Key>
+      <PropertyRef Name="Est_id" />
+    </Key>
+    <Property Name="Est_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Est_nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Est_lab1" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Est_lab2" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Est_lab3" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Est_par1" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Est_par2" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Est_par3" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="EstudianteEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TblNotasEstudiantes" EntityType="Self.TblNotasEstudiante" />
+  </EntityContainer>
+</Schema>

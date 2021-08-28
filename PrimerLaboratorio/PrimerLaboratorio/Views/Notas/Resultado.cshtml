@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Resultado</h2>
+
+
+<table table class="table table-dark table-striped">
+    <th>
+        Nombre
+    </th>
+    <th>
+        Primer promedio
+    </th>
+    <th>
+        Segundo Promedio
+    </th>
+    <th>
+        Tercer Promedio
+    </th>
+    <th>
+        Promedio final
+    </th>
+    <tbody>
+        <tr>
+            <td>@ViewBag.nombre</td>
+            <td>@ViewBag.prom1</td>
+            <td>@ViewBag.prom2</td>
+            <td>@ViewBag.prom3</td>
+            <td>@ViewBag.promF</td>
+        </tr>
+    </tbody>
+</table>
+<h3>@Html.ActionLink("Regresar", "Index")</h3>
+<h3>@Html.ActionLink("Ver todos los resultados", "ResultadosGenerales")</h3>

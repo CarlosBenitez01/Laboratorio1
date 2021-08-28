@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EstudianteModelStoreContainer" CdmEntityContainer="EstudianteEntities">
+    <EntitySetMapping Name="TblNotasEstudiantes">
+      <EntityTypeMapping TypeName="EstudianteModel.TblNotasEstudiante">
+        <MappingFragment StoreEntitySet="TblNotasEstudiante">
+          <ScalarProperty Name="Est_id" ColumnName="Est_id" />
+          <ScalarProperty Name="Est_nombre" ColumnName="Est_nombre" />
+          <ScalarProperty Name="Est_lab1" ColumnName="Est_lab1" />
+          <ScalarProperty Name="Est_lab2" ColumnName="Est_lab2" />
+          <ScalarProperty Name="Est_lab3" ColumnName="Est_lab3" />
+          <ScalarProperty Name="Est_par1" ColumnName="Est_par1" />
+          <ScalarProperty Name="Est_par2" ColumnName="Est_par2" />
+          <ScalarProperty Name="Est_par3" ColumnName="Est_par3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
